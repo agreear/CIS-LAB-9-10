@@ -31,17 +31,19 @@ testDuplicates();
        Sortedarr[3] = 9;
        Sortedarr[4] = 10;
        /** add tests to check for this unit test **/
-       
+
        SelectionSort testSort = new SelectionSort();
-       
+
        arr = testSort.basicSelectionSort(arr);
-       
+
        for(int i = 0; i < 4; i++){
-    	   
+
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
-    	   
+
        }
-       
+
+       System.out.println("Positive test passed");
+
    }
    public void testNegative(){
 	   int[] arr = new int[5];
@@ -57,17 +59,19 @@ testDuplicates();
        Sortedarr[3] = -4;
        Sortedarr[4] = -1;
        /** Test data contains negative values only **/
-       
+
        SelectionSort testSort = new SelectionSort();
-       
+
        arr = testSort.basicSelectionSort(arr);
-       
+
        for(int i = 0; i < 4; i++){
-    	   
+
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
-    	   
+
        }
-       
+
+       System.out.println("Negative test passed");
+
    }
    public void testMixed(){
 	   int[] arr = new int[5];
@@ -83,17 +87,17 @@ testDuplicates();
        Sortedarr[3] = 4;
        Sortedarr[4] = 9;
        /** Test data contains with both positive, negative and zeros **/
-       
+
        SelectionSort testSort = new SelectionSort();
-       
+
        arr = testSort.basicSelectionSort(arr);
-       
+
        for(int i = 0; i < 4; i++){
-    	   
+
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
-    	   
+
        }
-       
+
    }
    public void testDuplicates(){
 	   int[] arr = new int[5];
@@ -109,18 +113,16 @@ testDuplicates();
        Sortedarr[3] = 9;
        Sortedarr[4] = 10;
        /** Test data contains duplicates **/
-       
+
        SelectionSort testSort = new SelectionSort();
-       
+
        arr = testSort.basicSelectionSort(arr);
-       
+
        for(int i = 0; i < 4; i++){
-    	   
+
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
-    	   
+
        }
-       
+
    }
 }
-
-
