@@ -41,9 +41,8 @@ testDuplicates();
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
 
        }
-
+     
        System.out.println("Positive test passed");
-
    }
    public void testNegative(){
 	   int[] arr = new int[5];
@@ -69,7 +68,6 @@ testDuplicates();
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
 
        }
-
        System.out.println("Negative test passed");
 
    }
@@ -97,6 +95,8 @@ testDuplicates();
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
 
        }
+     
+       System.out.println("Mixed test passed");
 
    }
    public void testDuplicates(){
@@ -123,6 +123,7 @@ testDuplicates();
     	   assertEquals("Test Passed", Sortedarr[i],arr[i]);
 
        }
-
+     
+       System.out.println("Duplicates test passed");
    }
 }
